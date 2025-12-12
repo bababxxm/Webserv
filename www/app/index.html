@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Webserv</title>
+    <link rel="stylesheet" href="/app/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <img src="/public/logo.jpg" alt="Logo" class="logo">
+        <h1>Webserv Running Successfully</h1>
+    </header>
+
+    <main>
+        <p>This is the main page served from <strong>/app/index.html</strong>.</p>
+
+        <section class="links">
+            <h2>Try the following routes:</h2>
+            <ul>
+                <li><a href="/cgi-bin/hello.py">/cgi-bin/hello.py</a></li>
+                <li><a href="/cgi-bin/echo.py">/cgi-bin/echo.py</a></li>
+                <li><a href="/cgi-bin/info.php">/cgi-bin/info.php</a></li>
+                <li><a href="/assets/data/sample.json">/assets/data/sample.json</a></li>
+                <li><a href="/uploads/">/uploads/</a></li>
+                <li><a href="/errors/404.html">/errors/404.html</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="/app/script.js"></script>
+</body>
+</html>

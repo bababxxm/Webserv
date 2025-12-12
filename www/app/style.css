@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #fafafa;
+    color: #222;
+}
+
+.logo {
+    height: 80px;
+}
+
+.links ul {
+    margin-top: 10px;
+    line-height: 1.8;
+}
