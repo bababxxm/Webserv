@@ -3,24 +3,59 @@
 /*                                                        :::      ::::::::   */
 /*   Webserv.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sklaokli <sklaokli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pkhienko42 <pkhienko42@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 14:31:40 by sklaokli          #+#    #+#             */
-/*   Updated: 2025/12/06 17:17:23 by sklaokli         ###   ########.fr       */
+/*   Updated: 2025/12/13 02:11:02 by pkhienko42       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WEBSERV_HPP
 # define WEBSERV_HPP
 
+// C++ & C Standard Library
+# include <ctime>
+# include <string>
+# include <cerrno>
+# include <cctype>
 # include <cstdlib>
+# include <cstring>
 # include <iostream>
+
+// POSIX / UNIX System Calls
+# include <fcntl.h>
+# include <unistd.h>
+# include <dirent.h>
+# include <sys/stat.h>
+# include <sys/types.h>
+
+// Networking
+# include <netdb.h>
+# include <arpa/inet.h>
+# include <sys/socket.h>
+# include <netinet/in.h>
+
+// Process Control
+# include <signal.h>
+# include <sys/wait.h> 
+
+// Multiplexing
+# include <poll.h>
+# include <sys/epoll.h>
+# include <sys/select.h>
+
+// STL
+# include <map>
+# include <list>
+# include <vector>
+# include <iterator>
+# include <algorithm>
 
 # include "Config.hpp"
 # include "Poller.hpp"
+# include "Server.hpp"
 # include "Request.hpp"
 # include "Response.hpp"
-# include "Server.hpp"
 
 class Webserv {
 
