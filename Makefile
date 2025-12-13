@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sklaokli <sklaokli@student.42.fr>          +#+  +:+       +#+         #
+#    By: pkhienko42 <pkhienko42@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/24 14:32:33 by sklaokli          #+#    #+#              #
-#    Updated: 2025/12/12 23:27:48 by sklaokli         ###   ########.fr        #
+#    Updated: 2025/12/13 17:47:01 by pkhienko42       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,11 +18,14 @@ SRC_DIR		:=	src
 
 ROOT_FILES	:=	main.cpp
 
-SRC_FILES	:=	Config.cpp \
-				Poller.cpp \
-				Request.cpp \
-				Response.cpp \
-				Server.cpp \
+# SRC_FILES	:=	Config.cpp \
+# 				Poller.cpp \
+# 				Request.cpp \
+# 				Response.cpp \
+# 				Server.cpp \
+# 				Webserv.cpp
+
+SRC_FILES	:=  Server.cpp \
 				Webserv.cpp
 
 ROOT_OBJ	:=	$(addprefix $(OBJ_DIR)/, $(ROOT_FILES:%.cpp=%.o))
